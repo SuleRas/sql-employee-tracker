@@ -52,7 +52,6 @@ const promptUser = () => {
     })
 }
 // to do Query database
-
 function viewDepartments(){
     const sql = `SELECT * FROM department`;
   
@@ -174,21 +173,29 @@ function addDepartment(){
                 {
                     type: 'input',
                     name: 'managerId',
-                    message: 'Please enter your boss name',
+                    message: 'Please enter your boss id',
                     choices: ["David", "Neymar", "Cristiano","George"]
 
                 }
             ]).then(answers => {
-                const sql = `INSERT INTO role (firstname, lastname , role, managerId)
-                VALUES (?,?,?,?)`;
-              const params = [answers.fisrtname, answers.lastname, answers.role, answers.managerId];
+                const {firstname,
+                    lastname,
+                    role,
+                    managerId} = answers
+                const sql = `INSERT INTO employee (first_name, last_name , role_id, manager_id)
+                VALUE (?,?,?,?)`;
+
+              const params = [firstname, lastname, parseInt(role, 10), parseInt(managerId, 10)];
               
               db.query(sql, params, (err, result) => {
                 if (err) {
-                 
+                 console.log(err)
+               db.end()
+
                   return;
                 }
                console.log("Employee added")
+               db.end()
                promptUser()
               });
             })
