@@ -1,5 +1,5 @@
 # SQL-Employee Tracker
-link to video: 
+link to video: https://drive.google.com/file/d/11Udytxtigk5lqBI_cWXtPePn5hfFhVmR/view 
 
 
 
