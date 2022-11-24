@@ -1,17 +1,44 @@
-# sql-employee-tracker
+# SQL-Employee Tracker
+link to video: 
 
-# Employee Tracker
 
-## Task
 
-Developers frequently have to create interfaces that allow non-developers to easily view and interact with information stored in databases. These interfaces are called **content management systems (CMS)**. Your assignment this week is to build a command-line application from scratch to manage a company's employee database, using Node.js, Inquirer, and MySQL.
+## Table of Contents
+  - [Description](#description)
+  - [Installation](#installation)
+  - [Usage](#usage)
+  - [Contributing](#contributing)
+  - [Questions](#questions)
+  - [GitHub](#questions)
+  
 
-Because this application won’t be deployed, you’ll also need to create a walkthrough video that demonstrates its functionality and all of the following acceptance criteria being met. You’ll need to submit a link to the video and add it to the README of your project.
+## Description
 
-## User Story
+Developers frequently have to create interfaces that allow non-developers to easily view and interact with information stored in databases. These interfaces are called **content management systems (CMS)**.My task is to build a command-line application from scratch to manage a company's employee database, using Node.js, Inquirer, and MySQL.
 
 ```md
 AS A business owner
 I WANT to be able to view and manage the departments, roles, and employees in my company
 SO THAT I can organize and plan my business
 ```
+  
+  ## Installation :
+  -Git clone repositary
+  From Terminal:
+  - npm install
+  - mysql -u root -p
+  - source db/schema.sql
+  - source db/seeds.sql
+  Quit the terminal then node server.js and enjoy.
+  
+  ## Usage :
+  
+ 
+  ## License : 
+
+
+  ## Contributing ;
+
+
+ ## Questions
+ For any questions please contact me via email sm.ras@hotmail.co.uk or visit my GitHub profile https://github.com/SuleRas.
